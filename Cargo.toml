@@ -1,0 +1,20 @@
+[package]
+name = "nex-rs"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Ported from nex-go"]
+description = "Rust port of nex-go"
+
+[lib]
+name = "nex"
+path = "src/lib.rs"
+
+[dependencies]
+bytes = "1"
+thiserror = "1"
+bitflags = "2"
+byteorder = "1"
+crc32fast = "1"
+flate2 = { version = "1", features = ["zlib"] }
+once_cell = "1"
